@@ -19,5 +19,10 @@ namespace Pantalla_Users
             else
                 Console.WriteLine("no tiene acceso");   
         }
+
+        public void accessi ()
+        {
+            Console.WriteLine("bienvenidos a nuestro sistema ");
+        }
     }
 }

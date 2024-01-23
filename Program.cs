@@ -11,7 +11,6 @@ namespace Pantalla_Users
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("BIENVENIDO AL PROGRAMA DE SEGURIDAD DE LA FUERZAS ESPECIALIDADES\n");
 
             Personas persona = new Personas();
            // persona.Id = 1;
@@ -42,9 +41,10 @@ namespace Pantalla_Users
             Console.WriteLine("SR(A) " + departamento.Name + "\nUsted tiene " + departamento.Age + " años de Edad " +
                " y con el numero de telefono " + departamento.Number + "\npassword: " + departamento.Password + " y el Email " 
                + departamento.Email + " Departamento: " + departamento.Departament + "\n");
-
-            Console.WriteLine($"El usuario {.Name} \n");
+            Console.WriteLine($"El usuario {claims.Name}\n");
             claims.acceso();
+            Console.WriteLine($"El usuario {departamento.Name} \n");
+            claims.accessi();
 
             Console.ReadLine();
         }
