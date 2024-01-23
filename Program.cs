@@ -11,10 +11,10 @@ namespace Pantalla_Users
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("BIENVENIDO AL PROGRAMA DE SEGURIDAD DE LA FUERZAS ESPECIALED");
+            Console.WriteLine("BIENVENIDO AL PROGRAMA DE SEGURIDAD DE LA FUERZAS ESPECIALIDADES\n");
 
             Personas persona = new Personas();
-            persona.Id = 1;
+           // persona.Id = 1;
             persona.Name = "test";
             persona.Age = 30;
             persona.Number = 2526464;
@@ -30,11 +30,22 @@ namespace Pantalla_Users
             departamento.Email = "karla";
             departamento.Departament = "cirugia";
 
+            Bucles claims = new Bucles();
+            claims.Name = "hola";
+            claims.Age = 30;
+            claims.Number = 456;
+            claims.Pass = "pass";
+
             Console.WriteLine("SR(A) " + persona.Name + " \nUsted tiene " + persona.Age + " años de Edad " +
                 "\n numero de telefono " + persona.Number + "\npassword: " + persona.Password + "\n Email " + persona.Email + "\n");
 
             Console.WriteLine("SR(A) " + departamento.Name + "\nUsted tiene " + departamento.Age + " años de Edad " +
-               " y con el numero de telefono " + departamento.Number + "\npassword: " + departamento.Password + " y el Email " + departamento.Email + " Departamento: " + departamento.Departament);
+               " y con el numero de telefono " + departamento.Number + "\npassword: " + departamento.Password + " y el Email " 
+               + departamento.Email + " Departamento: " + departamento.Departament + "\n");
+
+            Console.WriteLine($"El usuario {.Name} \n");
+            claims.acceso();
+
             Console.ReadLine();
         }
     }
