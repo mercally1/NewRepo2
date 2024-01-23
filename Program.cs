@@ -11,6 +11,8 @@ namespace Pantalla_Users
     {
         static void Main(string[] args)
         {
+            Saludo saludo = new Saludo();
+            saludo.bien();
 
             Personas persona = new Personas();
            // persona.Id = 1;
@@ -19,6 +21,10 @@ namespace Pantalla_Users
             persona.Number = 2526464;
             persona.Password = "password_1";
             persona.Email = "jmercally";
+
+            
+
+            saludo.bien2();
 
             Departamento departamento = new Departamento();
             departamento.Id = 2;

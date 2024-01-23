@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Pantalla_Users
 {
    
-    public class Personas
+    public class Personas: Saludo
     {
         private int id;
         private string name;//nombre de la persona.
@@ -32,5 +32,7 @@ namespace Pantalla_Users
             this.Password = Password;
             this.Email = Email;    
         }
+
+        
     }
 }

@@ -22,7 +22,7 @@ namespace Pantalla_Users
 
         public void accessi ()
         {
-            Console.WriteLine("bienvenidos a nuestro sistema ");
+            Console.WriteLine("bienvenidos a nuestro sistema");
         }
     }
 }

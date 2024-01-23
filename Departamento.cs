@@ -9,7 +9,7 @@ namespace Pantalla_Users
     /// <summary>
     /// Perdonas es la clase padre donde hereda las caracteristicas principales  
     /// </summary>
-    public class Departamento : Personas
+    public class Departamento : Personas 
     { 
         private string departament;
 
